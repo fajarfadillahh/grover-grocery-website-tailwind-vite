@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-body font-reguler scroll-smooth">
+  <body class="font-body font-reguler">
     <!-- ===== HEADER SECTION ===== -->
     <header
       class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-500"
@@ -74,7 +74,7 @@
 
           <a
             href="#"
-            class="header__button button self-end items-center gap-2 border-2 border-solid border-red text-red mx-6 hover:text-white hover:bg-red"
+            class="header__button button self-end items-center gap-2 ring-2 ring-red ring-inset text-red hover:text-white hover:bg-red"
           >
             <i class="bx bx-user header__button-icon text-[1.5rem]"></i>
             Register
@@ -203,6 +203,66 @@
         </div>
       </section>
       <!-- ===== SERVICE SECTION ===== -->
+
+      <!-- ===== FEATURE SECTION ===== -->
+      <section class="feature section">
+        <div class="feature__container container px-6">
+          <div class="feature__group grid gap-40">
+            <div class="feature__item grid gap-12">
+              <div class="feature__data text-center">
+                <span class="feature__subtitle section-subtitle text-green"
+                  >Why Choose Us</span
+                >
+                <h1 class="feature__title section-title mb-4">
+                  Find The Favorite And Discover New Ones
+                </h1>
+                <p class="feature__text text-[15px] text-grey mb-8">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus
+                  blanditiis praesen voluptatum deleniti.
+                </p>
+                <a
+                  href="#"
+                  class="feature__button button inline-flex bg-red text-white"
+                  >Explore Now</a
+                >
+              </div>
+
+              <img
+                src="./src/img/features-image-(1).png"
+                alt=""
+                class="feature__img"
+              />
+            </div>
+
+            <div class="feature__item grid gap-12">
+              <div class="feature__data text-center">
+                <span class="feature__subtitle section-subtitle text-yellow"
+                  >Home Delivery</span
+                >
+                <h1 class="feature__title section-title mb-4">
+                  Sit At Home We Will Take Care Your Order
+                </h1>
+                <p class="feature__text text-[15px] text-grey mb-8">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus
+                  blanditiis praesen voluptatum deleniti.
+                </p>
+                <a
+                  href="#"
+                  class="feature__button button inline-flex ring-2 ring-red ring-inset text-red hover:text-white hover:bg-red"
+                  >Explore Now</a
+                >
+              </div>
+
+              <img
+                src="./src/img/features-image-(2).png"
+                alt=""
+                class="feature__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== FEATURE SECTION ===== -->
     </main>
 
     <!-- ===== MAIN JS ===== -->
