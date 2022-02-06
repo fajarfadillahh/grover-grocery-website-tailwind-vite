@@ -5,3 +5,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ===== Reusable Css Class ===== */
+@layer components {
+  /* Section Class */
+  .section {
+    @apply py-20;
+  }
+  .section-subtitle {
+    @apply block text-[15px] text-red font-semibold mb-4;
+  }
+  .section-title {
+    @apply text-[24px] text-black font-bold;
+  }
+
+  /* Button Class */
+  .button {
+    @apply flex justify-center py-4 px-8 rounded-[1rem] text-[15px] font-medium transition-all duration-500 hover:shadow-[0_4px_8px_rgba(248,96,97,0.4)];
+  }
+}
+
+/* ===== Header Section ===== */
+@media screen and (max-width: 768px) {
+  .header__menu {
+    @apply fixed  w-[80%] h-full top-0 -right-full grid grid-rows-[repeat(2,max-content)] gap-8 bg-white shadow-[-1px_0_8px_rgba(46,46,46,0.15)] py-8 transition-all duration-500;
+  }
+}
+.header__link {
+  @apply flex items-center pl-6 min-h-[46px] bg-transparent text-[15px] text-black;
+}
+.header__link.active-link {
+  @apply relative font-medium text-red bg-[#f8f8f8];
+}
+.header__link.active-link::before {
+  @apply absolute content-[""] w-[2px] h-full top-0 left-0 bg-red;
+}
+/* Show Header Menu */
+.header__menu.show-menu {
+  @apply right-0;
+}
