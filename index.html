@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-body font-reguler">
+  <body class="font-body font-reguler scroll-smooth">
     <!-- ===== HEADER SECTION ===== -->
     <header
       class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-500"
@@ -93,7 +93,7 @@
 
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
-      <section class="home pt-32" id="home">
+      <section class="home pt-32 pb-20" id="home">
         <div class="home__container container px-6 grid gap-12">
           <div class="home__data text-center">
             <div
@@ -124,6 +124,85 @@
         </div>
       </section>
       <!-- ===== HOME SECTION ===== -->
+
+      <!-- ===== SERVICE SECTION ===== -->
+      <section class="service section bg-[#fef5f5]">
+        <div class="service__container container px-6 grid gap-12">
+          <div class="service__data">
+            <span class="service__subtitle section-subtitle"
+              >What we serve</span
+            >
+            <h1 class="service__title section-title">
+              Friut Vegetable Delivered To Your Home
+            </h1>
+          </div>
+
+          <div
+            class="service__group grid grid-cols-[.8fr] justify-center gap-8"
+          >
+            <div
+              class="service__item grid gap-4 text-center px-6 py-10 bg-white rounded-[1rem] transition-all duration-500 hover:shadow-[10px_10px_0_rgb(248,96,97)]"
+            >
+              <img
+                src="./src/img/services-icon-(1).png"
+                alt=""
+                class="service__item-icon w-[100px] justify-self-center"
+              />
+              <div>
+                <h3
+                  class="service__item-title text-[20px] text-black font-semibold mb-4"
+                >
+                  Free Shipping
+                </h3>
+                <p class="service__item-text text-[15px] text-grey">
+                  Enjoy Order in a hand using the fresness of groceries
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="service__item grid gap-4 text-center px-6 py-10 bg-white rounded-[1rem] transition-all duration-500 hover:shadow-[10px_10px_0_rgb(248,96,97)]"
+            >
+              <img
+                src="./src/img/services-icon-(2).png"
+                alt=""
+                class="service__item-icon w-[100px] justify-self-center"
+              />
+              <div>
+                <h3
+                  class="service__item-title text-[20px] text-black font-semibold mb-4"
+                >
+                  15 days returns
+                </h3>
+                <p class="service__item-text text-[15px] text-grey">
+                  Order in a handy way using the freshness of the groceries.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="service__item grid gap-4 text-center px-6 py-10 bg-white rounded-[1rem] transition-all duration-500 hover:shadow-[10px_10px_0_rgb(248,96,97)]"
+            >
+              <img
+                src="./src/img/services-icon-(3).png"
+                alt=""
+                class="service__item-icon w-[100px] justify-self-center"
+              />
+              <div>
+                <h3
+                  class="service__item-title text-[20px] text-black font-semibold mb-4"
+                >
+                  Secure checkout
+                </h3>
+                <p class="service__item-text text-[15px] text-grey">
+                  If you get rotten items - return immediately to us.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== SERVICE SECTION ===== -->
     </main>
 
     <!-- ===== MAIN JS ===== -->

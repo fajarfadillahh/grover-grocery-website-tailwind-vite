@@ -13,10 +13,10 @@
     @apply py-20;
   }
   .section-subtitle {
-    @apply block text-[15px] text-red font-semibold mb-4;
+    @apply text-center block text-[15px] text-red font-semibold mb-4 uppercase;
   }
   .section-title {
-    @apply text-[24px] text-black font-bold;
+    @apply text-center text-[24px] text-black font-bold;
   }
 
   /* Button Class */
