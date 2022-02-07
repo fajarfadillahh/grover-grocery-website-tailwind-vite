@@ -74,7 +74,7 @@
 
           <a
             href="#"
-            class="header__button button self-end items-center gap-2 ring-2 ring-red ring-inset text-red hover:text-white hover:bg-red"
+            class="header__button button self-end items-center gap-2 ring-2 ring-red ring-inset text-red hover:text-white hover:bg-red mx-6"
           >
             <i class="bx bx-user header__button-icon text-[1.5rem]"></i>
             Register
@@ -95,7 +95,7 @@
       <!-- ===== HOME SECTION ===== -->
       <section class="home pt-32 pb-20" id="home">
         <div class="home__container container px-6 grid gap-12">
-          <div class="home__data text-center">
+          <div class="home__data text-center sm:w-[480px] sm:mx-auto">
             <div
               class="home__subtitle inline-flex items-center gap-2 py-3 px-6 bg-[rgba(248,96,97,0.15)] rounded-[5rem] text-[15px] text-red font-semibold mb-4"
             >
@@ -106,7 +106,9 @@
                 class="home__subtitle-icon w-[25px]"
               />
             </div>
-            <h1 class="home__title text-[32px] text-black font-bold mb-4">
+            <h1
+              class="home__title text-[32px] text-black font-bold mb-4 sm:text-[46px]"
+            >
               Groceries delivered in as little as 2 hours
             </h1>
             <p class="home__text text-[15px] text-grey mb-8 leading-[1.87]">
@@ -128,7 +130,7 @@
       <!-- ===== SERVICE SECTION ===== -->
       <section class="service section bg-[#fef5f5]">
         <div class="service__container container px-6 grid gap-12">
-          <div class="service__data">
+          <div class="service__data sm:w-[480px] sm:mx-auto">
             <span class="service__subtitle section-subtitle"
               >What we serve</span
             >
@@ -138,7 +140,7 @@
           </div>
 
           <div
-            class="service__group grid grid-cols-[.8fr] justify-center gap-8"
+            class="service__group grid grid-cols-[.8fr] justify-center gap-8 sm:grid-cols-2"
           >
             <div
               class="service__item grid gap-4 text-center px-6 py-10 bg-white rounded-[1rem] transition-all duration-500 hover:shadow-[10px_10px_0_rgb(248,96,97)]"
@@ -208,7 +210,7 @@
       <section class="feature section">
         <div class="feature__container container px-6">
           <div class="feature__group grid gap-40">
-            <div class="feature__item grid gap-12">
+            <div class="feature__item grid gap-12 sm:w-[480px] sm:mx-auto">
               <div class="feature__data text-center">
                 <span class="feature__subtitle section-subtitle text-green"
                   >Why Choose Us</span
@@ -234,7 +236,7 @@
               />
             </div>
 
-            <div class="feature__item grid gap-12">
+            <div class="feature__item grid gap-12 sm:w-[480px] sm:mx-auto">
               <div class="feature__data text-center">
                 <span class="feature__subtitle section-subtitle text-yellow"
                   >Home Delivery</span
@@ -268,9 +270,11 @@
       <section class="newsletter section">
         <div class="newsletter__container container px-6">
           <div
-            class="newsletter__wrapper grid gap-8 p-8 bg-red rounded-[1.5rem]"
+            class="newsletter__wrapper grid gap-8 p-8 bg-red rounded-[1.5rem] sm:p-16"
           >
-            <div class="newsletter__data text-center text-white">
+            <div
+              class="newsletter__data text-center text-white sm:w-[480px] sm:mx-auto"
+            >
               <h1 class="newsletter__title text-[24px] font-bold mb-[10px]">
                 Like our service? Subscribe us
               </h1>
@@ -282,12 +286,12 @@
 
             <form
               action=""
-              class="newsletter__direction flex flex-col gap-[10px]"
+              class="newsletter__direction flex flex-col gap-[10px] sm:flex-row p-2 sm:bg-white sm:rounded-[5rem] sm:justify-between"
             >
               <input
                 type="text"
                 placeholder="Enter your email address"
-                class="newsletter__direction-input text-center px-8 py-4 bg-white rounded-[5rem] text-[15px] text-black font-medium placeholder:text-red placeholder:text-[15px] placeholder:font-medium"
+                class="newsletter__direction-input text-center px-8 py-4 bg-white rounded-[5rem] text-[15px] text-black font-medium placeholder:text-red placeholder:text-[15px] placeholder:font-medium sm:w-full sm:text-left"
               />
               <button
                 class="newsletter__direction-button button text-[15px] text-white bg-black rounded-[5rem] cursor-pointer hover:shadow-none"
