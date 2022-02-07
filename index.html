@@ -23,7 +23,7 @@
       id="header"
     >
       <div
-        class="header__container container px-6 h-24 flex justify-between items-center"
+        class="header__container container px-6 h-24 flex justify-between items-center md:h-28 md:relative"
       >
         <a href="#" class="header__logo inline-flex items-center gap-2">
           <img
@@ -36,8 +36,10 @@
           >
         </a>
 
-        <div class="header__menu" id="header-menu">
-          <div class="header__data flex justify-between items-center px-6">
+        <div class="header__menu md:flex md:items-center" id="header-menu">
+          <div
+            class="header__data flex justify-between items-center px-6 md:hidden"
+          >
             <a href="#" class="header__logo inline-flex items-center gap-2">
               <img
                 src="./src/img/logo.png"
@@ -57,7 +59,9 @@
             </div>
           </div>
 
-          <ul class="header__list flex flex-col">
+          <ul
+            class="header__list flex flex-col md:flex-row md:gap-8 md:absolute md:left-[50%] md:translate-x-[-50%]"
+          >
             <li class="header__item">
               <a href="#" class="header__link active-link">Home</a>
             </li>
@@ -74,7 +78,7 @@
 
           <a
             href="#"
-            class="header__button button self-end items-center gap-2 ring-2 ring-red ring-inset text-red hover:text-white hover:bg-red mx-6"
+            class="header__button button self-end items-center gap-2 ring-2 ring-red ring-inset text-red hover:text-white hover:bg-red mx-6 md:mx-0"
           >
             <i class="bx bx-user header__button-icon text-[1.5rem]"></i>
             Register
@@ -82,7 +86,7 @@
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-menu"></i>
@@ -93,7 +97,7 @@
 
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
-      <section class="home pt-32 pb-20" id="home">
+      <section class="home pt-32 pb-20 md:pt-40" id="home">
         <div class="home__container container px-6 grid gap-12">
           <div class="home__data text-center sm:w-[480px] sm:mx-auto">
             <div
