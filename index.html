@@ -97,9 +97,11 @@
 
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
-      <section class="home pt-32 pb-20 md:pt-40" id="home">
-        <div class="home__container container px-6 grid gap-12">
-          <div class="home__data text-center sm:w-[480px] sm:mx-auto">
+      <section class="home pt-32 pb-20 md:pt-40 lg:pb-28" id="home">
+        <div class="home__container container px-6 grid gap-12 lg:grid-cols-2">
+          <div
+            class="home__data text-center sm:w-[480px] sm:mx-auto lg:self-center lg:text-left"
+          >
             <div
               class="home__subtitle inline-flex items-center gap-2 py-3 px-6 bg-[rgba(248,96,97,0.15)] rounded-[5rem] text-[15px] text-red font-semibold mb-4"
             >
@@ -135,16 +137,18 @@
       <section class="service section bg-[#fef5f5]">
         <div class="service__container container px-6 grid gap-12">
           <div class="service__data sm:w-[480px] sm:mx-auto">
-            <span class="service__subtitle section-subtitle"
+            <span class="service__subtitle section-subtitle sm:text-center"
               >What we serve</span
             >
-            <h1 class="service__title section-title">
+            <h1
+              class="service__title text-[24px] text-black font-bold text-center sm:text-[32px]"
+            >
               Friut Vegetable Delivered To Your Home
             </h1>
           </div>
 
           <div
-            class="service__group grid grid-cols-[.8fr] justify-center gap-8 sm:grid-cols-2"
+            class="service__group grid grid-cols-[.8fr] justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:w-[80%] lg:mx-auto"
           >
             <div
               class="service__item grid gap-4 text-center px-6 py-10 bg-white rounded-[1rem] transition-all duration-500 hover:shadow-[10px_10px_0_rgb(248,96,97)]"
@@ -214,15 +218,21 @@
       <section class="feature section">
         <div class="feature__container container px-6">
           <div class="feature__group grid gap-40">
-            <div class="feature__item grid gap-12 sm:w-[480px] sm:mx-auto">
-              <div class="feature__data text-center">
+            <div
+              class="feature__item grid gap-12 sm:w-[480px] sm:mx-auto lg:grid-cols-2 lg:w-auto"
+            >
+              <div
+                class="feature__data text-center lg:self-center lg:text-left"
+              >
                 <span class="feature__subtitle section-subtitle text-green"
                   >Why Choose Us</span
                 >
                 <h1 class="feature__title section-title mb-4">
                   Find The Favorite And Discover New Ones
                 </h1>
-                <p class="feature__text text-[15px] text-grey mb-8">
+                <p
+                  class="feature__text text-[15px] text-grey mb-8 lg:w-[400px]"
+                >
                   At vero eos et accusamus et iusto odio dignissimos ducimus
                   blanditiis praesen voluptatum deleniti.
                 </p>
@@ -240,15 +250,21 @@
               />
             </div>
 
-            <div class="feature__item grid gap-12 sm:w-[480px] sm:mx-auto">
-              <div class="feature__data text-center">
+            <div
+              class="feature__item grid gap-12 sm:w-[480px] sm:mx-auto lg:grid-cols-2 lg:w-auto"
+            >
+              <div
+                class="feature__data text-center lg:self-center lg:text-left lg:order-2"
+              >
                 <span class="feature__subtitle section-subtitle text-yellow"
                   >Home Delivery</span
                 >
                 <h1 class="feature__title section-title mb-4">
                   Sit At Home We Will Take Care Your Order
                 </h1>
-                <p class="feature__text text-[15px] text-grey mb-8">
+                <p
+                  class="feature__text text-[15px] text-grey mb-8 lg:w-[400px]"
+                >
                   At vero eos et accusamus et iusto odio dignissimos ducimus
                   blanditiis praesen voluptatum deleniti.
                 </p>
@@ -274,7 +290,7 @@
       <section class="newsletter section">
         <div class="newsletter__container container px-6">
           <div
-            class="newsletter__wrapper grid gap-8 p-8 bg-red rounded-[1.5rem] sm:p-16"
+            class="newsletter__wrapper grid gap-8 p-8 bg-red rounded-[1.5rem] sm:p-16 lg:w-[80%] lg:mx-auto"
           >
             <div
               class="newsletter__data text-center text-white sm:w-[480px] sm:mx-auto"
@@ -290,7 +306,7 @@
 
             <form
               action=""
-              class="newsletter__direction flex flex-col gap-[10px] sm:flex-row p-2 sm:bg-white sm:rounded-[5rem] sm:justify-between"
+              class="newsletter__direction flex flex-col gap-[10px] sm:flex-row p-2 sm:bg-white sm:rounded-[5rem] sm:justify-between sm:w-[480px] sm:mx-auto"
             >
               <input
                 type="text"
@@ -314,7 +330,7 @@
         <div
           class="footer__group grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-8"
         >
-          <div class="footer__item">
+          <div class="footer__item lg:justify-self-center">
             <a
               href="#"
               class="footer__logo header__logo inline-flex items-center gap-2 mb-4"
@@ -334,7 +350,7 @@
             </p>
           </div>
 
-          <div class="footer__item">
+          <div class="footer__item lg:justify-self-center">
             <h3
               class="footer__item-title text-[18px] text-black font-semibold mb-4"
             >
@@ -373,7 +389,7 @@
             </ul>
           </div>
 
-          <div class="footer__item">
+          <div class="footer__item lg:justify-self-center">
             <h3
               class="footer__item-title text-[18px] text-black font-semibold mb-4"
             >
@@ -412,7 +428,7 @@
             </ul>
           </div>
 
-          <div class="footer__item">
+          <div class="footer__item lg:justify-self-center">
             <h3
               class="footer__item-title text-[18px] text-black font-semibold mb-4"
             >

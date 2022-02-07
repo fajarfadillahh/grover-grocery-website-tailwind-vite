@@ -10,13 +10,13 @@
 @layer components {
   /* Section Class */
   .section {
-    @apply py-20;
+    @apply py-20 lg:py-28;
   }
   .section-subtitle {
-    @apply text-center block text-[15px] text-red font-semibold mb-4 uppercase;
+    @apply text-center block text-[15px] text-red font-semibold mb-4 uppercase lg:text-left;
   }
   .section-title {
-    @apply text-center text-[24px] text-black font-bold sm:text-[32px];
+    @apply text-center text-[24px] text-black font-bold sm:text-[32px] lg:text-left lg:text-[46px];
   }
 
   /* Button Class */
